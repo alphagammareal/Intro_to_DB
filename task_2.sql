@@ -20,10 +20,10 @@ CREATE TABLE IF NOT EXISTS Books (
 -- 3. CUSTOMERS TABLE
 CREATE TABLE IF NOT EXISTS Customers (
     customer_id INT AUTO_INCREMENT PRIMARY KEY,
-    customer_name VARCHAR(100) NOT NULL,
-    customer_email VARCHAR(100) UNIQUE,
+    customer_name VARCHAR(215) NOT NULL,
+    customer_email VARCHAR(215) UNIQUE,
     customer_phone VARCHAR(20),
-    customer_address VARCHAR(255)
+    customer_address TEXT
 );
 
 -- 4. ORDERS TABLE
